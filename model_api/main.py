@@ -1,8 +1,6 @@
 import joblib
 import uvicorn
 from fastapi import FastAPI
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.preprocessing import StandardScaler
 
 from models import DeviceInput, PredictionOutput
 

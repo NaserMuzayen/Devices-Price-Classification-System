@@ -15,25 +15,13 @@ async def predict_device_price(device: DeviceInput):
     device_data = [
         [
             device.battery_power,
-            device.blue,
-            device.clock_speed,
-            device.dual_sim,
-            device.fc,
             device.four_g,
             device.int_memory,
-            device.m_dep,
             device.mobile_wt,
             device.n_cores,
-            device.pc,
-            device.px_height,
-            device.px_width,
-            device.ram,
-            device.sc_h,
-            device.sc_w,
-            device.talk_time,
-            device.three_g,
+            device.ram/1024,
             device.touch_screen,
-            device.wifi
+            device.px_height*device.px_width,
         ]
     ]
     
